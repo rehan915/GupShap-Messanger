@@ -1,0 +1,60 @@
+.join-page, .chat-page {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1d1d;
+    font-size: 30px;
+    color: white;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.join-container {
+  padding: 30px;
+  width: 95%;
+  display: block;
+  height: 90%;
+  margin: auto;
+}
+
+.join-container h1{
+  text-align: left;
+  font-size: 30px;
+  color: #1d1d1d;
+  font-weight: 700;
+  margin-top: 220px;
+}
+
+.join-container p{
+  padding: 10px 0px;
+}
+
+.join-container input {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.join-container button {
+  padding: 10px 20px;
+  background-color: #1d1d1d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 7px;
+}

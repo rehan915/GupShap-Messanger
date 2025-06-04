@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Join Gupshap Messenger</title>
+    <link rel="stylesheet" href="/join.css" />
+</head>
+
+<body class="join-page">
+    <header>Powered By Rehan</header>
+    <div class="join-container">
+        <h1>Welcome to Gupshap Messenger</h1>
+        <p> 👋 Welcome to <strong>Gupshap Messenger</strong> – a real-time, fun-filled chat space where conversations
+            come alive!
+            Connect instantly with others, share thoughts, and be part of the moment. Just enter your name, hit "Join
+            Chat", and start gupshup!</p>
+        <input type="text" id="nameInput" placeholder="Enter your name" />
+        <button onclick="joinChat()">Join Chat</button>
+    </div>
+
+    <script>
+        function joinChat() {
+            const name = document.getElementById('nameInput').value.trim();
+            if (name) {
+                localStorage.setItem('gupshap-username', name);
+                window.location.href = '/chat.html';
+            }
+        }
+    </script>
+</body>
+
+</html>

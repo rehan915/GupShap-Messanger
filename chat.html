@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gupshap Messenger - Real Time Chat Application</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="chat-page">
+  <div class="chat-header">
+    <h2>Gupshap Messenger</h2>
+    <button onclick="exitChat()">Exit Chat</button>
+  </div>
+
+  <div class="chat-box" id="chatBox"></div>
+
+  <form id="messageForm">
+    <input type="text" id="messageInput" autocomplete="off" placeholder="Type a message..." required/>
+    <button type="submit">Send</button>
+  </form>
+
+<audio id="notifySound" src="msg.mp3" preload="auto"></audio>
+  <script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
